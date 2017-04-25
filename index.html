@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Inicio
 ---
 
 <div class="posts">
@@ -8,10 +8,9 @@ title: Home
     <div class="post post-preview">
       <h1 class="post-title">
         <a href="{{ post.url }}">
-          {{ post.title }}
+          {{ post.title }} <aside class="main-date">{{ post.date | date: site.customdate }}</aside>
         </a>
       </h1>
-      <span class="post-date">{{ post.date | date: "%e %b %Y" }}</span>
     </div>
 
   {% endfor %}
@@ -19,19 +18,17 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Anteriores envios</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older">Anteriores envios</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Nuevos envios</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Nuevos envios</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer">Nuevos envios</span>
   {% endif %}
 </div>
-
-<img src="https://ga-beacon.appspot.com/UA-58200910-1/simar7.github.io/index.html?pixel">

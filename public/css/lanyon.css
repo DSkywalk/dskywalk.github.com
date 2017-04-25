@@ -299,7 +299,7 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  padding: 1em .55em .5em;
 }
 
 /* Blog post or page title */
@@ -443,20 +443,27 @@ a.pagination-item:hover {
 }
 
 .theme-base-07 .sidebar-nav-item.active {
-  color: #ff4942;
+  color: #6660ff;
   background-color: #fff;
 }
 
 .theme-base-07 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ff4942;
+  background-color: #6660ff;
 }
 
 .theme-base-07 .container a,
 .theme-base-07 .sidebar-toggle,
 .theme-base-07 .sidebar-toggle:active,
 .theme-base-07 .related-posts li a:hover {
-  color: #ff4942;
+  color: #6660ff;
 }
+
+.theme-base-07 .container a:hover,
+.theme-base-07 .related-posts li a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
 
 /* Red */
 .theme-base-08 .sidebar,

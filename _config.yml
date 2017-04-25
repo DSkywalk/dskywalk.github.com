@@ -9,30 +9,34 @@ permalink:           pretty
 #relative_permalinks: true
 
 # Setup
-title:               Simarpreet Singh 
-#tagline:             'Singh'
-description:          
-url:                 http://simar7.github.io
+title:               AlhambraMakers 
+tagline:             COMUNIDAD MAKER EN GRANADA
+description:         'alhambramakers'
+url:                 http://alhambramakers.github.io
 baseurl:             /
 paginate:            5
+paginate_path:       '/page:num/'
+
 
 # About/contact
 author:
-  name:              Simarpreet Singh 
-  url:               http://git.io/simar 
-  email:             simar@linux.com 
-  linkedin:          https://ca.linkedin.com/in/simar7
-  googleplus:        https://plus.google.com/+SimarpreetSingh/
+  name:              alhambramakers 
+  url:               http://git.io/alhambramakers
+  email:             alhambramakers@linux.com 
+  linkedin:          https://ca.linkedin.com/in/alhambramakers
+  googleplus:        https://plus.google.com/+AlhambraMakers/
+  twitter:           https://twitter.com/alhambramakers
 
 # Timezone
-timezone: America/Toronto
+timezone: Europe/Madrid
 
 # Custom vars
 version:             1.0.0
-
+customdate:          "%d/%m/%Y"
 # Custom gems
 gems:
     - jekyll-sitemap
+    - jekyll-paginate
 
 # jekyll-tagging params
 tag_page_layout: blog_by_tag
