@@ -1,0 +1,22 @@
+.masthead-title small {
+  display: block;
+}
+
+.masthead-title::before {
+    background-image: url('/public/apple-touch-icon-precomposed.png');
+    background-size: 64px 64px;
+    display: inline-block;
+    width: 76px;
+    height: 64px;
+    content: "";
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.main-date {
+    float: right;
+    position: relative;
+    top: 15px;
+    font-size: .5em;
+    color: #bbb;
+}
