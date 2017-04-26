@@ -307,7 +307,7 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  padding: 1em .55em .5em;
+  /*padding: 1em .55em .5em;*/
 }
 
 /* Blog post or page title */

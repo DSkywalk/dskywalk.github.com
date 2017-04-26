@@ -25,7 +25,27 @@
     border: 1px solid;
 }
 
-@media (max-width: 24em) {
+.post-title a {
+    display: block;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: .2em .2em .5em;
+}
+.post-title a svg {
+    position: relative;
+    top: 13px;
+    width: 48px;
+    fill: #ccc;
+}
+
+.post-title a:hover svg {
+    top: 12px;
+    fill: #aaa;
+}
+
+
+@media (max-width: 38em) {
     .main-date {
         display: none;
     }
