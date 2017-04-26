@@ -121,6 +121,14 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title small {
     display: none;
   }
+  .masthead-title::before {
+    display: inline-block;
+    background-size: 32px 32px !important;
+    width: 32px !important; height: 16px !important;
+    float: none !important;
+  }
+
+
 }
 
 
@@ -443,19 +451,19 @@ a.pagination-item:hover {
 }
 
 .theme-base-07 .sidebar-nav-item.active {
-  color: #6660ff;
+  color: #334;
   background-color: #fff;
 }
 
 .theme-base-07 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #6660ff;
+  background-color: #334;
 }
 
 .theme-base-07 .container a,
 .theme-base-07 .sidebar-toggle,
 .theme-base-07 .sidebar-toggle:active,
 .theme-base-07 .related-posts li a:hover {
-  color: #6660ff;
+  color: #334;
 }
 
 .theme-base-07 .container a:hover,
